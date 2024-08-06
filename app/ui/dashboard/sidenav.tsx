@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import NavLinks from './nav-links';
+import { Amplify } from "aws-amplify"
 import AcmeLogo from '../acme-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from "aws-amplify/auth"
+import outputs from "../../../amplify_outputs.json"
+
+Amplify.configure(outputs)
 
 export default function SideNav() {
   async function handleSignOut() {
