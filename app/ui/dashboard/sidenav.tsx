@@ -30,8 +30,8 @@ export default function SideNav() {
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
           </button>
-          <button className="block md:hidden" onClick={handleSignOut}>Exit</button>
-        </form>
+         </form>
+         <button className="block md:hidden" onClick={handleSignOut}>Exit</button>
       </div>
     </div>
   );
