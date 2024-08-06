@@ -33,8 +33,7 @@ export default function SideNav() {
             <div className="hidden md:block">Sign Out</div>
           </button>
          </form>
-         <button className="block md:hidden" onClick={handleSignOut}>Exit</button>
-      </div>
+        </div>
     </div>
   );
 }
